@@ -13,3 +13,11 @@ spring:
     cache: true
     prefix: classpath:/templates/
     suffix: .html
+
+server:
+  error:
+    include-message: always
+  forward-headers-strategy: native
+  port: 18081
+  servlet:
+    context-path: /diceware
